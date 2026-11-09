@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#d6d6d6"/></pattern></defs>
+<rect width="100%" height="100%" fill="white"/><rect width="100%" height="100%" fill="url(#dots)"/>
+<style>text{font-family:Arial,sans-serif;fill:#222}.tbl{fill:white;stroke:#555;stroke-width:2}.head{fill:#eaf1f8;stroke:#555;stroke-width:2}.title{font-size:27px;font-weight:bold}.th{font-size:19px;font-weight:bold}.field{font-size:17px}.key{font-size:17px;font-weight:bold}.line{stroke:#555;stroke-width:2;fill:none}.note{font-size:16px}</style>
+<text x="800" y="45" text-anchor="middle" class="title">MODELO LÓGICO — AGENDA DO SALÃO</text>
+<!-- lines first -->
+<path class="line" d="M320 350 V285 H1370 V350"/><path class="line" d="M690 350 V305 H1380 V430"/><path class="line" d="M1060 350 V325 H1390 V510"/>
+<text x="800" y="270" class="key">1:N</text><text x="1050" y="295" class="key">1:N</text><text x="1170" y="315" class="key">1:N</text>
+<!-- tables -->
+<g><rect class="tbl" x="90" y="350" width="300" height="270"/><rect class="head" x="90" y="350" width="300" height="52"/><text x="240" y="383" text-anchor="middle" class="th">CLIENTES</text>
+<text x="115" y="440" class="key">PK  id INTEGER</text><text x="115" y="485" class="field">nome TEXT</text><text x="115" y="530" class="field">telefone TEXT</text><text x="115" y="575" class="field">email TEXT</text></g>
+<g><rect class="tbl" x="460" y="350" width="300" height="270"/><rect class="head" x="460" y="350" width="300" height="52"/><text x="610" y="383" text-anchor="middle" class="th">PROFISSIONAIS</text>
+<text x="485" y="440" class="key">PK  id INTEGER</text><text x="485" y="485" class="field">nome TEXT</text><text x="485" y="530" class="field">especialidade TEXT</text><text x="485" y="575" class="field">ativo INTEGER</text></g>
+<g><rect class="tbl" x="830" y="350" width="300" height="270"/><rect class="head" x="830" y="350" width="300" height="52"/><text x="980" y="383" text-anchor="middle" class="th">SERVICOS</text>
+<text x="855" y="440" class="key">PK  id INTEGER</text><text x="855" y="485" class="field">nome TEXT</text><text x="855" y="530" class="field">preco REAL</text><text x="855" y="575" class="field">duracao_min INTEGER</text></g>
+<g><rect class="tbl" x="1200" y="350" width="340" height="355"/><rect class="head" x="1200" y="350" width="340" height="52"/><text x="1370" y="383" text-anchor="middle" class="th">AGENDAMENTOS</text>
+<text x="1225" y="440" class="key">PK  id INTEGER</text><text x="1225" y="485" class="key">FK  cliente_id INTEGER</text><text x="1225" y="530" class="key">FK  profissional_id INTEGER</text><text x="1225" y="575" class="key">FK  servico_id INTEGER</text><text x="1225" y="620" class="field">data_hora TEXT</text><text x="1225" y="665" class="field">status TEXT</text></g>
+<rect x="120" y="760" width="1360" height="95" rx="8" fill="white" stroke="#888" stroke-width="1.5"/>
+<text x="150" y="795" class="th">REGRAS</text><text x="150" y="830" class="note">As três FKs da tabela AGENDAMENTOS apontam para a PK id das tabelas CLIENTES, PROFISSIONAIS e SERVICOS.</text>
+</svg>
