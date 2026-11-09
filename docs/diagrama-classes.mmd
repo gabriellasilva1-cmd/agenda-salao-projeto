@@ -1,0 +1,41 @@
+classDiagram
+    class Cliente {
+        +int id
+        +str nome
+        +str telefone
+        +str email
+        +cadastrar()
+        +atualizar()
+    }
+
+    class Profissional {
+        +int id
+        +str nome
+        +str especialidade
+        +bool ativo
+        +consultarAgenda()
+    }
+
+    class Servico {
+        +int id
+        +str nome
+        +float preco
+        +int duracao_min
+        +consultar()
+    }
+
+    class Agendamento {
+        +int id
+        +int cliente_id
+        +int profissional_id
+        +int servico_id
+        +datetime data_hora
+        +str status
+        +criar()
+        +cancelar()
+        +concluir()
+    }
+
+    Cliente "1" --> "0..*" Agendamento : realiza
+    Profissional "1" --> "0..*" Agendamento : atende
+    Servico "1" --> "0..*" Agendamento : selecionado em
