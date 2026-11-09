@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="920" viewBox="0 0 1500 920">
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#d6d6d6"/></pattern></defs>
+<rect width="100%" height="100%" fill="white"/><rect width="100%" height="100%" fill="url(#dots)"/>
+<style>text{font-family:Arial,sans-serif;fill:#222}.entity{fill:white;stroke:#555;stroke-width:2}.attr{fill:white;stroke:#666;stroke-width:1.5}.rel{fill:white;stroke:#555;stroke-width:2}.line{stroke:#555;stroke-width:1.8;fill:none}.name{font-size:20px;font-weight:bold}.label{font-size:16px}.small{font-size:15px;font-weight:bold}.title{font-size:27px;font-weight:bold}</style>
+<text x="750" y="42" text-anchor="middle" class="title">MODELO CONCEITUAL — AGENDA DO SALÃO</text>
+<!-- entities -->
+<rect class="entity" x="120" y="390" width="190" height="78"/><text x="215" y="435" text-anchor="middle" class="name">CLIENTE</text>
+<rect class="entity" x="620" y="390" width="230" height="78"/><text x="735" y="435" text-anchor="middle" class="name">AGENDAMENTO</text>
+<rect class="entity" x="1120" y="190" width="230" height="78"/><text x="1235" y="235" text-anchor="middle" class="name">PROFISSIONAL</text>
+<rect class="entity" x="1120" y="650" width="230" height="78"/><text x="1235" y="695" text-anchor="middle" class="name">SERVIÇO</text>
+<!-- relationships -->
+<path class="line" d="M310 429 H420"/><polygon class="rel" points="480,390 540,429 480,468 420,429"/><text x="480" y="434" text-anchor="middle" class="label">REALIZA</text><path class="line" d="M540 429 H620"/><text x="325" y="412" class="small">1</text><text x="590" y="412" class="small">N</text>
+<path class="line" d="M1235 268 V320 H735 V390"/><polygon class="rel" points="980,282 1040,320 980,358 920,320"/><text x="980" y="325" text-anchor="middle" class="label">ATENDE</text><text x="1250" y="294" class="small">1</text><text x="750" y="378" class="small">N</text>
+<path class="line" d="M1235 650 V570 H735 V468"/><polygon class="rel" points="980,532 1040,570 980,608 920,570"/><text x="980" y="575" text-anchor="middle" class="label">INCLUI</text><text x="1250" y="625" class="small">1</text><text x="750" y="495" class="small">N</text>
+<!-- attributes -->
+<g>
+<path class="line" d="M170 390 L115 300"/><ellipse class="attr" cx="100" cy="275" rx="72" ry="25"/><text x="100" y="280" text-anchor="middle" class="label"><tspan text-decoration="underline" font-weight="bold">id</tspan></text>
+<path class="line" d="M215 390 L215 300"/><ellipse class="attr" cx="215" cy="275" rx="70" ry="25"/><text x="215" y="280" text-anchor="middle" class="label">nome</text>
+<path class="line" d="M260 468 L300 540"/><ellipse class="attr" cx="330" cy="565" rx="82" ry="25"/><text x="330" y="570" text-anchor="middle" class="label">telefone</text>
+<path class="line" d="M310 445 L420 520"/><ellipse class="attr" cx="465" cy="550" rx="65" ry="25"/><text x="465" y="555" text-anchor="middle" class="label">email</text>
+</g>
+<g>
+<path class="line" d="M670 390 L640 300"/><ellipse class="attr" cx="625" cy="275" rx="75" ry="25"/><text x="625" y="280" text-anchor="middle" class="label"><tspan text-decoration="underline" font-weight="bold">id</tspan></text>
+<path class="line" d="M735 390 L735 300"/><ellipse class="attr" cx="735" cy="275" rx="82" ry="25"/><text x="735" y="280" text-anchor="middle" class="label">data_hora</text>
+<path class="line" d="M800 468 L850 540"/><ellipse class="attr" cx="900" cy="565" rx="70" ry="25"/><text x="900" y="570" text-anchor="middle" class="label">status</text>
+</g>
+<g>
+<path class="line" d="M1170 190 L1140 120"/><ellipse class="attr" cx="1125" cy="95" rx="75" ry="25"/><text x="1125" y="100" text-anchor="middle" class="label"><tspan text-decoration="underline" font-weight="bold">id</tspan></text>
+<path class="line" d="M1235 190 L1235 120"/><ellipse class="attr" cx="1235" cy="95" rx="70" ry="25"/><text x="1235" y="100" text-anchor="middle" class="label">nome</text>
+<path class="line" d="M1300 190 L1370 140"/><ellipse class="attr" cx="1400" cy="120" rx="88" ry="25"/><text x="1400" y="125" text-anchor="middle" class="label">especialidade</text>
+<path class="line" d="M1350 230 L1400 280"/><ellipse class="attr" cx="1420" cy="305" rx="55" ry="25"/><text x="1420" y="310" text-anchor="middle" class="label">ativo</text>
+</g>
+<g>
+<path class="line" d="M1170 728 L1135 790"/><ellipse class="attr" cx="1115" cy="815" rx="70" ry="25"/><text x="1115" y="820" text-anchor="middle" class="label"><tspan text-decoration="underline" font-weight="bold">id</tspan></text>
+<path class="line" d="M1235 728 L1235 790"/><ellipse class="attr" cx="1235" cy="815" rx="70" ry="25"/><text x="1235" y="820" text-anchor="middle" class="label">nome</text>
+<path class="line" d="M1300 728 L1370 790"/><ellipse class="attr" cx="1400" cy="815" rx="65" ry="25"/><text x="1400" y="820" text-anchor="middle" class="label">preco</text>
+<path class="line" d="M1120 690 L1050 760"/><ellipse class="attr" cx="1010" cy="785" rx="85" ry="25"/><text x="1010" y="790" text-anchor="middle" class="label">duracao_min</text>
+</g>
+<text x="45" y="885" class="label">Atributos sublinhados representam as chaves primárias. Cardinalidades: 1:N.</text>
+</svg>
