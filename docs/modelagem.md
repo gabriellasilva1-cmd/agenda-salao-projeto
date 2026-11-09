@@ -6,6 +6,8 @@ O sistema organiza os agendamentos de um salão de beleza, relacionando clientes
 
 ## Modelo conceitual
 
+Diagrama: [abrir modelo conceitual](modelo-conceitual.svg).
+
 ### Entidades e atributos
 
 - **Cliente:** id, nome, telefone, email.
@@ -20,6 +22,8 @@ O sistema organiza os agendamentos de um salão de beleza, relacionando clientes
 - Um **Serviço** pode aparecer em vários **Agendamentos**. Cada agendamento seleciona um serviço (1:N).
 
 ## Modelo lógico
+
+Diagrama: [abrir modelo lógico](modelo-logico.svg).
 
 | Tabela | Campos |
 |---|---|
