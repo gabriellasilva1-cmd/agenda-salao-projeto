@@ -4,13 +4,15 @@ Projeto Integrado das disciplinas de Desenvolvimento Web, Programação Orientad
 
 ## Etapa 1 — Modelagem e banco de dados
 
-Esta etapa contém a modelagem inicial do sistema, o script SQL e a conexão inicial do Python com SQLite.
+Esta etapa contém os diagramas da modelagem, o script SQL e a conexão inicial do Python com SQLite.
 
 ### Estrutura
 
 - `database/schema.sql`: criação das tabelas e restrições.
 - `database/conexao.py`: conexão e inicialização do banco SQLite.
 - `docs/modelagem.md`: descrição dos modelos conceitual, lógico e físico.
+- `docs/modelo-conceitual.svg`: diagrama conceitual.
+- `docs/modelo-logico.svg`: diagrama lógico.
 - `docs/diagrama-classes.mmd`: diagrama inicial de classes UML em Mermaid.
 
 ### Como inicializar o banco
